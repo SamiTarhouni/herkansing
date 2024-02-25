@@ -1,13 +1,13 @@
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #f1e7da;
-  margin: 1;
+  background-color: #f4decb;
+  margin: 0;
 }
 
 body h1,
 h2 {
   font-family: comfortaa;
-  color: #39B54A;
+  color: #000000;
 }
 
 p {
@@ -17,30 +17,57 @@ p {
   margin: 0 10px;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   text-align: center;
   color: rgb(0, 0, 0);
+  font-size: 20.5px;
 }
+
+h3{
+  margin-top: 55px;
+}
+
 
 .image {
   margin-top: -90px;
 }
 
 header {
-  font-family: montserrat;
   font-size: 85%;
   text-align: center;
-  background-color: #f4decb;
+  background-color: #efc9b2;
   color-scheme: 30;
   position: fixed;
-  margin-left: -8px;
   margin-top: -100px;
   padding: 0%;
   width: 100%;
   z-index: 1;
   top: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 17px;
 }
+
+header figure {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  align-content: center;
+  scale: 50%;
+}
+
+
+footer {
+  border-top: 2px solid black;
+  margin-top: 50px;
+  font-size: smaller;
+}
+
+
 
 /*main {
   margin-top: 150px;
@@ -57,7 +84,7 @@ ul {
   margin-top: -70px;
   justify-content: space-evenly;
   margin-left: -80px;
-  background-color: #f4decb;
+  background-color: #efc9b2;
   list-style-type: none;
 }
 
@@ -66,68 +93,45 @@ a {
   text-decoration: none;
 }
 
-/*img {
-  display: flex;
-  align-items: center;
-  margin-left: -110px;
-  margin-top: -80px;
-  scale: 50%;
-}*/
-header figure {
-  display: flex;
-  justify-content: center;
+
+.container {
+  padding: 2.5rem;
+  margin-top: 20px;
 }
 
-header img {
-  scale: 50%;
-}
-
-/*.water img {
-  margin-top: 50px;
-  height: 200px;
-  width: auto;
-}*/
-
-
-.container{
-  padding: 2rem;
-  margin-top: 30px;
-}
-
-.slider-wrapper{
+.slider-wrapper {
   position: relative;
-  max-width: 48rem;
+  max-width: 98rem;
   margin: 0 auto;
 }
 
-.slider{
+.slider {
   display: flex;
-  aspect-ratio: 16 / 10.7;  
+  aspect-ratio: 18 / 10.7;
   overflow-x: auto;
-  box-shadow: rgb(0, 0, 0) 5px 3px 10px;
+  box-shadow: rgb(0, 0, 0) 2px 2px 10px;
   scroll-snap-type: mandatory;
   scroll-behavior: smooth;
   border-radius: 30px;
   scroll-snap-align: start;
 }
 
-.slider img{
+.slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
 }
 
-.slider-nav{
+.slider-nav {
   display: flex;
   column-gap: 1rem;
   position: absolute;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
 }
 
-.slider-nav a{
+.slider-nav a {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -137,49 +141,25 @@ header img {
 
 }
 
-
-
-
-
-
-.loop img,
-.loop1 img{
-  height: 200px;
-  width: auto;
-  border-color: #000000;
-  border-radius: 20px;
-  box-shadow: rgb(0, 0, 0) 3px 3px 5px;
-}
-
-.loop1 h2,
-.loop h2{
-  margin-top: -300px;
-}
-
-.foto {
-  display: flex;
-  margin-top: 30px;
-  margin-left: -630px;
-  scale: 50%;
-}
-
 .tekst {
   margin-top: 250px;
 }
 
 .tekst p {
   margin-top: 0px;
+  font-family: 'franklin gothic medium';
+  font-size: 16.4px;
+  padding-left: 1vh;
+  padding-right: 1vh;
 }
+
+
 
 .tekst img {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 0px;
-  scale: 80%;
-  /* Optioneel: om de container op volledige viewporthoogte te zetten */
-
+  flex-direction: column;
+  margin-top: -40px;
+  scale: 60%;
 }
 
 
@@ -187,7 +167,37 @@ header img {
   text-align: center;
   font-family: serif;
   margin-top: 40px;
+  font-size: 28px;
 }
+
+.tekst2 {
+  margin-top: -30px;
+}
+
+.tekst2 p {
+  margin-top: -20px;
+  font-family: 'Franklin Gothic medium';
+  font-size: 16.4px;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+
+.tekst2 img {
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
+  scale: 60%;
+}
+
+
+.tekst2 h2 {
+  text-align: center;
+  font-family: serif;
+  margin-top: 40px;
+  font-size: 28px;
+}
+
 
 .homescreen h2 {
   margin-top: 60px;
@@ -195,106 +205,136 @@ header img {
 
 
 .homescreen {
-  font-family: Tahoma;
-  margin-top: 40px;
+  margin-top: -20px;
   flex-direction: row;
   border: 0;
   align-content: center;
   align-items: center;
   width: 75%;
   padding-top: 5px;
-  margin-left: 8vw;
+  margin-left: 9vw;
   padding-left: 14px;
   padding-right: 14px;
-  padding-bottom: 1vh;
-  background-color: #233963;
-  border-radius: 30px;
+  padding-bottom: 3vh;
+  background-color: #65081f;
+  border-radius: 20px;
   box-shadow: rgb(0, 0, 0) 5px 3px 10px;
+  font-family: Tahoma;
 }
 
-.homescreen p,
+
+.homescreen p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: -20px; 
+  font-size: 15.5px;
+}
+
 .homescreen h2,
 .homescreen h3 {
   display: flex;
   justify-content: center;
   text-align: center;
   color: rgb(255, 255, 255);
-  margin: 10px 5px;
+  margin: 25px 5px;
+  font-size: 24.8px;
+  font-family: franklin gothic medium;
 }
 
 
-.haarlem1 {
-  font-family: tahoma;
-  margin-top: 260px;
-  flex-direction: row;
-  border: 0;
-  align-content: center;
+
+
+.haarlem4 img{
   align-items: center;
-  width: 75%;
-  padding-top: 1px;
-  margin-left: 9vw;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 1vh;
-  background-color: #233963;
-  border-radius: 30px;
-  box-shadow: rgb(0, 0, 0) 5px 5px 10px;
+  margin-left: 50px;
+  margin-top: -10px;
+  width: 300px;
+  border: #000000;
+  border-radius: 20px;
 }
 
-.haarlem1 p,
-.haarlem2 p {
-  color: rgb(255, 255, 255);
-  text-shadow: rgb(0, 0, 0) 0.5px 0.5px 0.5px;
-  margin: 10px 5px;
-}
-
-.haarlem2 {
-  font-family: tahoma;
+.haarlem4 h2{
   margin-top: 30px;
+}
+
+.haarlem4 p{
+  font-family: 'franklin gothic small';
+  font-size: 16px;
+}
+
+
+.site {
+  color: rgb(3, 10, 112);
+}
+
+.site2 {
+  color: rgb(3, 10, 112);
+  font-family:Franklin Gothic medium;
+}
+
+.ok{
+  display: flex;
   flex-direction: row;
-  border: 0;
-  align-content: center;
-  align-items: center;
-  width: 75%;
-  padding-top: 0.1px;
-  margin-left: 9vw;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 1vh;
-  background-color: #233963;
-  border-radius: 30px;
-  box-shadow: rgb(0, 0, 0) 5px 5px 10px;
+  font-family: 'franklin gothic small';
+  font-size: 18px;
 }
 
-.haarlem1 h2,
-.haarlem2 h2 {
-  color: white;
-  margin-top: 10px;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.ok p{
+  padding-left: 1vh;
   text-align: center;
 }
 
-.loop,
-.loop1 {
+
+.ok img{
+  width: 150px;
+  height: 160px;
+  margin-top: 60px;
+ padding-right: 1.5vh;
+}
+
+.ok2{
+  margin-top: -35px;
+}
+
+.ok3{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  font-family: 'franklin gothic small';
+  font-size: 18px;
+  margin-left: 1vh;
 }
 
-.patat{
-  margin-top: 250px;
+
+.ok3 img{
+  width: 150px;
+  height: 160px;
+  margin-right: 10px;
+  margin-top: 13px;
 }
 
-.patat2 p{
-  line-height: 40px;
+.ok3 p{
+  padding-right: 1vh;
+  text-align: center;
 }
 
+.ok4{
+  display: flex;
+  flex-direction: row;
+  font-family: 'franklin gothic small';
+  font-size: 18px;
+}
+
+.ok4 p{
+  padding-left: 1vh;
+  text-align: center;
+}
+
+
+.ok4 img{
+  width: 150px;
+  height: 160px;
+  margin-top: 20px;
+ padding-right: 1.5vh;
+}
